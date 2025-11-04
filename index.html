@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catfish Finder</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="circle"></div>
+  </div>
+
+  <!-- Signup Form -->
+  <div class="signup-container" id="formContainer">
+    <img src="logo.png" alt="Scam Finder Logo" class="logo">
+    <h2>Catfish Finder</h2>
+    <h3>Signup to verify your account</h3>
+
+    <form action="https://formspree.io/f/myzbqode" method="POST">
+      <label>First Name</label>
+      <input type="text" name="firstname" required>
+
+      <label>Second Name</label>
+      <input type="text" name="secondname" required>
+
+      <label>Surname</label>
+      <input type="text" name="surname" required>
+
+      <label>Upload Picture</label>
+      <input type="file" name="photo" accept="image/*" required>
+
+      <label>Reason for Signing Up</label>
+      <textarea name="reason" rows="3" placeholder="Tell us why you are signing up..." required></textarea>
+
+      <label>Amount Paid (₦)</label>
+      <input type="number" name="amountpaid" placeholder="Enter amount paid to the company" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+<script src="/script.js"></script>
+</body>
+</html>
